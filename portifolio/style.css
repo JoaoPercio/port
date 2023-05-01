@@ -1,0 +1,289 @@
+/* paleta de cores: #696E6B #9EF0BF #E4EEE8  #486E57 */
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 100000;
+}
+header.sticky{
+  padding: 5px 100px;
+  background: #486E57;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+header .logo{
+  position: relative;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+header ul{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li{
+  position: relative;
+  list-style: none;
+}
+header ul li a{
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #ffffff;
+  letter-spacing: 2px;
+  font-weight: 300;
+  transition: 0.6s;
+}
+.banner{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(158,240,191);
+  background: linear-gradient(90deg, rgba(158,240,191,1) 1%, rgba(72,110,87,1) 70%);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.banner h2{  
+  color: #000000;
+  font-size: 100px;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1em;
+  font-family: ''
+}
+header.sticky .logo,
+header.sticky ul li a{
+  color: #000;
+}
+.sec{
+  background: #fff;
+  padding: 100px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec .content{
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+.workBx{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+  max-width: 100%;
+  margin-top: 40px;
+}
+.workBx .brand{
+  position: relative;
+  background: #E4EEE8;
+  min-height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.workBx .brand:hover {
+  transform: scale(1.4);
+}
+/* Feito a resposividade*/
+@media (max-width: 992px)
+{
+  .toggle{
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+  .toggle:before{
+    content: '';
+    position: absolute;
+    top: 4px;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    z-index: 1;
+    box-shadow: 0 10px 0 #000;
+    transition: 0.5s;
+  }
+  .toggle:after{
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    z-index: 1;
+    transition: 0.5s;
+  }
+  header.active .toggle:before {
+    top: 14px;
+    transform: rotate(45deg);
+    box-shadow: 0 0 0 #000;
+  }
+  header.active .toggle:after {
+    bottom: 14px;
+    transform: rotate(-45deg);
+  }
+  header.active .toggle:before {
+    top: 14px;
+    transform: rotate(45deg);
+    box-shadow: 0 0 0 #000;
+  }
+  header.active .toggle:after {
+    bottom: 14px;
+    transform: rotate(-45deg);
+  }
+
+  header ul{
+    position: absolute;
+    top: 59px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh);
+    padding: 50px 100px;
+    text-align: center;
+    overflow: auto;
+    visibility: hidden;
+    opacity: 0;
+  }
+  header.active ul{
+    display: block;
+    background: #fff;
+    visibility: visible;
+    opacity: 1;
+  }
+  header.active ul li a{
+    margin: 5px 0;
+    font-size: 24px;
+  }
+  header,
+  header.sticky{
+    padding: 5px 50px;
+    background: #486E57;
+  }
+  header .logo,
+  header ul li a{
+    color: #000;
+  }
+  .banner{
+    background-position: center;
+  }
+  .banner h2{
+    font-size: 60px;
+    padding: 0 50px;
+  }
+  h3{
+    font-size: 600px;
+    font-weight: 800;
+    color:#dfe8d1;
+    line-height: 1em;
+  }
+  
+  .workBx .brand{
+    background: #dfe8d1;
+  }
+}
+.container3 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.image {
+  flex: 1;
+  max-width: 50%;
+  text-align: center;
+}
+.image img {
+  border-radius: 50%;
+  max-width: 100%;
+  height: 400px;
+}
+.content4 {
+  flex: 1;
+  max-width: 50%;
+  padding: 0 20px;
+}
+.content4 h1 {
+  font-size: 30px;
+}
+.content4 h2{
+  font-size: 70px;
+  font-weight: 400;
+  color: #486E57;
+}
+.content4 p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+@media screen and (max-width: 768px) {
+  .container3 {
+    flex-direction: column;
+  }
+  .image,
+  .content4 {
+    max-width: 100%;
+  }
+}
+.sobre{
+position: relative;
+width: 100%;
+min-height: 70vh;
+background-size: cover;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#aref{
+  text-decoration: none;
+  color: black;
+}
+#centraliza{
+  text-align: center;
+}
+#botao{
+  margin-top: 30px;
+  width: 210px;
+  height: 80px;
+  border: 1px solid black;
+  text-decoration: none;
+  color:black;
+  font-weight: 700;
+}
+#botao:hover{
+  background-color: #000000;
+  color: white;
+}
