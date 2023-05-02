@@ -23,28 +23,18 @@
     <a href="#" class="logo"> João Pércio</a>
     <ul>
       <li><a href="#home" onclick="toggle()">Home</a></li>
-      <li><a href="#sobre" onclick="toggle()">sobre</a></li>
-      <li><a href="#habilidade" onclick="toggle()">habilidades</a></li>
-      <li><a href="#portfolio" onclick="toggle()">Portfolio</a></li>
-      <li><a href="#contato" onclick="toggle()">Contatos</a></li>
-      <li><a href="https://github.com/JoaoPercio" onclick="toggle()"><img src="assets/github.png" width="30px"
+      <li><a href="#sobre" onclick="toggle()">Sobre</a></li>
+      <li><a href="#habilidade" onclick="toggle()">Habilidades</a></li>
+      <li><a href="#portfolio" onclick="toggle()">Portfólio</a></li>
+      <li><a href="#contato" onclick="toggle()">Contato</a></li>
+      <li><a href="https://github.com/JoaoPercio" onclick="toggle()" target="_blank"><img src="assets/github.png" width="30px"
             height="30px"></a></li>
-      <li><a href="https://www.linkedin.com/in/jo%C3%A3o-roberto-p%C3%A9rcio-1a7b71246" onclick="toggle()"><img
+      <li><a href="https://www.linkedin.com/in/jo%C3%A3o-roberto-p%C3%A9rcio-1a7b71246" onclick="toggle()" target="_blank"><img
             src="assets/linkedin.png" width="30px" height="30px"></a></li>
     </ul>
     <div class="toggle" onclick="toggle()"></div>
   </header>
   <!--Home-->
-  <section class="banner" id="home">
-    <div class="col-lg-6">
-      <div class="container text-center">
-        <h2>Innovative technology solutions for businesses.</h2>
-        <div class="container text-center">
-          <a href="#sobre"><button type="button" class="btn" id="botao">Conheça meu trabalho</button></a>
-        </div>
-      </div>
-    </div>
-  </section>
   <section class="sobre" id="sobre">
     <div class="container3">
       <div class="image">
@@ -70,8 +60,8 @@
   <!--section habilidades-->
   <section class="sec work" id="habilidade">
     <div class="content">
-      <div class="mxw800p">
-        <h1>habilidades</h1>
+      <div class="habilidades-text">
+        <h1>Habilidades</h1>
         <p>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</p>
       </div>
       <div class="workBx">
@@ -102,11 +92,105 @@
       </div>
     </div>
   </section>
+  <!--Section portfolio-->
+  <section class="portfolio" id="portfolio">
+    <div class="content">
+      <div class="portfolio-text">
+        <h2>Portfólio</h2>
+        <h1>Projetos</h1>
+      </div>
+
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <h1>Example Headline1</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum totam ea, magni est in fuga delectus? Nobis, officia, consequatur libero itaque reiciendis alias laudantium quae fugiat impedit eos veritatis animi?</p>
+              <h2>Website</h2>
+              <hr>
+              <div class="portfolio-images">
+                <div class="workBx">
+                  <div class="brand">
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"><img src="assets/html-5.png" width="100px"
+                        heigth="100px"></a>
+                  </div>
+                  <div class="brand">
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"><img src="assets/css-3.png" width="100px"
+                        heigth="100px"></a>
+                  </div>
+                  <div class="brand">
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"><img src="assets/java.png" width="100px"
+                        heigth="100px"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <h1>Example Headline2</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum totam ea, magni est in fuga delectus? Nobis, officia, consequatur libero itaque reiciendis alias laudantium quae fugiat impedit eos veritatis animi?</p>
+              <h2>Website</h2>
+              <hr>
+              <div class="portfolio-images">
+                <div class="workBx">
+                  <div class="brand">
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"><img src="assets/html-5.png" width="100px"
+                        heigth="100px"></a>
+                  </div>
+                  <div class="brand">
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"><img src="assets/css-3.png" width="100px"
+                        heigth="100px"></a>
+                  </div>
+                  <div class="brand">
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"><img src="assets/java.png" width="100px"
+                        heigth="100px"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <h1>Example Headline3</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum totam ea, magni est in fuga delectus? Nobis, officia, consequatur libero itaque reiciendis alias laudantium quae fugiat impedit eos veritatis animi?</p>
+              <h2>Website</h2>
+              <hr>
+              <div class="portfolio-images">
+                <div class="workBx">
+                  <div class="brand">
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"><img src="assets/html-5.png" width="100px"
+                        heigth="100px"></a>
+                  </div>
+                  <div class="brand">
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"><img src="assets/css-3.png" width="100px"
+                        heigth="100px"></a>
+                  </div>
+                  <div class="brand">
+                    <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"><img src="assets/java.png" width="100px"
+                        heigth="100px"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>  
   <!-- Section contatos-->
   <section class="container-fluid" id="contato">
     <div class="row">
       <div class="col-lg-6 py-5">
-        <h3>contato</h3>
+        <h3>Contato</h3>
         <h2> Algum Problema em mente?</h2>
         <p> caso deseje entrar em contato para discutir oportunidades de negócios, projetos ou até mesmo ofertas de
           emprego, este são meus contatos.</p>
@@ -129,7 +213,7 @@
               <a href="#habilidade" id="aref">Habilidades</a>
             </div>
             <div class="col">
-              <a href="#portifolio" id="aref">Pórtifolio</a>
+              <a href="#portfolio" id="aref">Portfólio</a>
             </div>
             <div class="col">
               <a href="#contato" id="aref">Contato</a>
@@ -141,13 +225,13 @@
     <hr>
     <div class="row">
       <div class="col-lg-6 py-5">
-        <p> desenvolvido por João P. e Petterson © </p>
+        <p> Desenvolvido por João P. e Petterson © </p>
       </div>
     </div>
     <div class="container text-center">
-      <a href="https://www.linkedin.com/in/jo%C3%A3o-roberto-p%C3%A9rcio-1a7b71246"><img src="assets/linkedin.png" width="30px"
+      <a href="https://www.linkedin.com/in/jo%C3%A3o-roberto-p%C3%A9rcio-1a7b71246" target="_blank"><img src="assets/linkedin.png" width="30px"
           height="30px"></a>
-      <a href="https://github.com/JoaoPercio"><img src="assets/github.png" width="30px" height="30px"></a>
+      <a href="https://github.com/JoaoPercio" target="_blank"><img src="assets/github.png" width="30px" height="30px"></a>
     </div>
     </div>
 

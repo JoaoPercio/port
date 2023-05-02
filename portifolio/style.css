@@ -115,7 +115,7 @@ header.sticky ul li a{
   align-items: center;
 }
 .workBx .brand:hover {
-  transform: scale(1.4);
+  transform: scale(1.2);
 }
 /* Feito a resposividade*/
 @media (max-width: 992px)
@@ -259,13 +259,14 @@ header.sticky ul li a{
   }
 }
 .sobre{
-position: relative;
-width: 100%;
-min-height: 70vh;
-background-size: cover;
-display: flex;
-justify-content: center;
-align-items: center;
+  position: relative;
+  width: 100%;
+  min-height: 70vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
 }
 #aref{
   text-decoration: none;
@@ -286,4 +287,55 @@ align-items: center;
 #botao:hover{
   background-color: #000000;
   color: white;
+}
+
+.habilidades-text h1{
+  font-size: 30px;
+}
+
+.portfolio-text {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.portfolio-text h2 {
+  font-size: 1.875em;
+}
+
+.portfolio-text h1 {
+  font-size: 5em;
+}
+
+.carousel {
+  padding: 0 0 100px 0;
+}
+
+.carousel-control-prev .carousel-control-prev-icon {
+  background-image: url("assets/previous-arrow.png");
+  margin-top: 2em;
+  margin-left: 2em;
+}
+
+.carousel-control-next .carousel-control-next-icon {
+  background-image: url("assets/next-arrow.png");
+  margin-top: 2em;
+  margin-right: 2em;
+}
+
+.container h1 {
+  font-size: 5em;
+}
+
+.container p {
+  font-size: 1.25em;
+  text-align: justify;
+}
+
+.container h2 {
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.portfolio-images {
+  padding: 0 0 50px 0;
 }
